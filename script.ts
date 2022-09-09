@@ -1,4 +1,3 @@
-
 var cards = document.getElementsByClassName("history-card");
 var elements = document.getElementsByClassName("calculator-button");
 var questionBox = document.getElementById("question-box")
