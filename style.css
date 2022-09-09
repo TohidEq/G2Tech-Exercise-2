@@ -597,6 +597,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mt-3{
+  margin-top: 0.75rem;
+}
+
 .h-screen{
   height: 100vh;
 }
@@ -613,30 +617,10 @@ video {
   max-width: 20rem;
 }
 
-.overflow-hidden{
-  overflow: hidden;
-}
-
 .truncate{
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.overflow-ellipsis{
-  text-overflow: ellipsis;
-}
-
-.whitespace-nowrap{
-  white-space: nowrap;
-}
-
-.whitespace-pre{
-  white-space: pre;
-}
-
-.whitespace-pre-wrap{
-  white-space: pre-wrap;
 }
 
 .rounded{
@@ -675,10 +659,6 @@ video {
   text-align: center;
 }
 
-.text-right{
-  text-align: right;
-}
-
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -713,6 +693,7 @@ video {
 }
 
 .calculator-buttons button{
+  height: 3.5rem;
   border-radius: 0.25rem;
   background-color: rgb(243 243 243 / var(--tw-bg-opacity));
   --tw-bg-opacity: 1;
@@ -764,6 +745,37 @@ video {
 
 .calculator-buttons button:active{
   box-shadow: 0px 2px 0px rgba(200,200, 200, 0.40)
+}
+
+#cards-box .history-card{
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 20rem;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(142 139 130 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+#cards-box .history-card:hover{
+  --tw-bg-opacity: 0.7;
+}
+
+#cards-box .history-card:active{
+  --tw-bg-opacity: 1;
+  background-color: rgb(214 45 45 / var(--tw-bg-opacity));
 }
 
 .link-icon{
