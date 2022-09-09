@@ -5,3 +5,71 @@
 *{
     font-family: 'Orbitron', sans-serif;
 }
+
+
+
+
+.calculator {
+
+}
+
+
+
+.answer-box{
+    
+}
+
+
+.calculator-buttons {
+    @apply grid grid-cols-4 gap-1 gap-y-3
+}
+
+.calculator-buttons button{
+    @apply bg-white-c text-darck-c-2
+        rounded bg-opacity-100
+}
+
+.calculator-buttons button.calculator-button-cols-2{
+    @apply col-span-2 text-3xl
+}
+.calculator-buttons button.calculator-button-clear{
+    @apply bg-red-c
+}.calculator-buttons button.calculator-button-submit{
+    @apply bg-clicked-c
+}
+
+.calculator-buttons button{
+
+    @apply 
+        transition-all duration-150
+        hover:translate-y-0.5
+        hover:bg-opacity-80
+
+        active:bg-opacity-60
+        active:translate-y-1;
+    box-shadow: 0px 6px 0px rgba(256,256, 256, 0.40)
+}.calculator-buttons button:hover{
+    box-shadow: 0px 4px 0px rgba(200,200, 200, 0.40)
+}.calculator-buttons button:active{
+    box-shadow: 0px 2px 0px rgba(200,200, 200, 0.40)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.link-icon{
+    @apply relative h-full ml-1
+}
+.link-icon svg{
+    @apply h-4 w-4 fill-white-c absolute top-1/2 left-1/2 transition-all duration-150
+        hover:fill-red-c hover:scale-125
+        active:fill-clicked-c active:scale-75
+}
