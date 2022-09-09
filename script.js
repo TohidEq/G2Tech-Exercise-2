@@ -1,7 +1,4 @@
-var buttonHandle = function (_e) {
-    console.log(_e);
-};
-//document.getElementsByClassName("duc")
+var cards = document.getElementsByClassName("history-card");
 var elements = document.getElementsByClassName("calculator-button");
 var questionBox = document.getElementById("question-box");
 var myFunction = function () {
@@ -18,11 +15,20 @@ clear.addEventListener('click', function () {
     questionBox.textContent = "";
 });
 var submit = document.getElementById("submit-button");
+var cardsBox = document.getElementById("cards-box");
 submit.addEventListener('click', function () {
     try {
-        questionBox.textContent = eval(questionBox.textContent);
+        if (questionBox.textContent === "Error")
+            questionBox.textContent = "";
+        else {
+            cardsBox.innerHTML += "<div class=\"history-card\" onclick=\"historyHandle(this)\">".concat(questionBox.textContent, "= ").concat(eval(questionBox.textContent), "</div>");
+            questionBox.textContent = eval(questionBox.textContent);
+        }
     }
     catch (error) {
         questionBox.textContent = "Error";
     }
 });
+var historyHandle = function (e) {
+    e.remove();
+};
