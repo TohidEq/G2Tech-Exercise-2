@@ -1,0 +1,28 @@
+{
+  "name": "g2tech-exercise-2-calculator",
+  "version": "1.0.0",
+  "description": "simple calculator (TS HTML CSS Tailwindcss)",
+  "main": "postcss.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "tailwindcss --postcss -i ./tailwind.css -o ./style.css --watch",
+    "compile-ts": "tsc script.ts --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TohidEq/G2Tech-Exercise-2-Calculator.git"
+  },
+  "author": "TohidEq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TohidEq/G2Tech-Exercise-2-Calculator/issues"
+  },
+  "homepage": "https://github.com/TohidEq/G2Tech-Exercise-2-Calculator#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.8",
+    "postcss": "^8.4.16",
+    "postcss-import": "^15.0.0",
+    "tailwindcss": "^3.1.8"
+  },
+  "devDependencies": {}
+}
